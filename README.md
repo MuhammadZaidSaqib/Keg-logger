@@ -57,6 +57,43 @@ source .venv/bin/activate   # Linux / macOS
 3️⃣ Install Dependencies
 pip install pynput
 
+
+🐉 Kali Linux Setup Guide
+⚠️ Important Note for Kali Users
+
+Kali Linux follows PEP 668 (Externally Managed Python Environment), which prevents installing Python packages globally using pip.
+
+Because of this, you must use a virtual environment to install project dependencies safely.
+
+🛠️ Step-by-Step Setup on Kali Linux
+1️⃣ Clone the Repository
+git clone https://github.com/MuhammadZaidSaqib/Keg-logger.git
+cd Keg-logger
+
+2️⃣ Install Virtual Environment Support (if not installed)
+sudo apt install python3-venv
+
+3️⃣ Create a Virtual Environment
+python3 -m venv .venv
+
+4️⃣ Activate the Virtual Environment
+source .venv/bin/activate
+
+
+After activation, your terminal should look like:
+
+(.venv) kali@kali:~/Keg-logger$
+
+5️⃣ Install Required Dependency
+pip install pynput
+
+
+(Optional – save dependencies)
+
+pip freeze > requirements.txt
+
+6️⃣ Run the Program
+python Keylogger.py
 ▶️ Usage
 🔹 Character-by-Character Logger
 
